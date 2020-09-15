@@ -11,7 +11,7 @@ Teacher.create(username: "brennank", password: "brennank", name: "Kathleen Brenn
 Student.create(username: "Sarah", password: "burke", name: "Sarah Burke", teacher_id:  1, user_type: "student")
 Student.create(username: "Sam", password: "brennan", name: "Sam Brennan", teacher_id:  1, user_type: "student")
 Student.create(username: "Ryan", password: "brennan", name: "Ryan Brennan", teacher_id:  1, user_type: "student")
-Student.create(username: "Kelsey", password: "strode", name: "Kelsey Strode", teacher_id:  1, user_type: "")
+Student.create(username: "Kelsey", password: "strode", name: "Kelsey Strode", teacher_id:  1, user_type: "student")
 
 
 Question.create(name: "Q1", content: "rsgresg", teacher_id: 1, points: 5)
