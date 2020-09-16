@@ -6,6 +6,6 @@ class TeachersController < ApplicationController
 
     def show
         teacher = Teacher.all.find(params[:id])
-        render json: user 
+        render json: teacher
     end
 end
