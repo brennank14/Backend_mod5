@@ -3,7 +3,7 @@ class Api::V1::TeacherAuthController < ApplicationController
         
         teacher = Teacher.find_by(username: params[:username])
         
-        if teacher && teacher.authenticate(params[:password])
+        if teacher && teacher.authenticate(params[:password])    
             render json: teacher
         else
             render json: { error: 'Invalid Login Data.' }

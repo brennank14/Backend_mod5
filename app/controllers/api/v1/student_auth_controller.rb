@@ -8,8 +8,5 @@ class Api::V1::StudentAuthController < ApplicationController
         else
             render json: { error: 'Invalid Login Data.' }
         end
-        
-
-
     end
 end
