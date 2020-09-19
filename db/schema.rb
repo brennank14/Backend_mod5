@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2020_09_15_165714) do
     t.integer "question_id"
     t.float "grade"
     t.text "feedback"
+    t.text "answer"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

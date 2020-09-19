@@ -5,6 +5,7 @@ class CreateStudentQuestions < ActiveRecord::Migration[6.0]
       t.integer :question_id
       t.float :grade
       t.text :feedback
+      t.text :answer
 
       t.timestamps
     end
