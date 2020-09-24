@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2020_09_15_165714) do
     t.float "grade"
     t.text "feedback"
     t.text "answer"
+    t.boolean "graded", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

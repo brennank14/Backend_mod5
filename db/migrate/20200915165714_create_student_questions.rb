@@ -6,6 +6,7 @@ class CreateStudentQuestions < ActiveRecord::Migration[6.0]
       t.float :grade
       t.text :feedback
       t.text :answer
+      t.boolean :graded, :default => false
 
       t.timestamps
     end
