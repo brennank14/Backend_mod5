@@ -17,10 +17,10 @@ Student.create(username: "Clare", password: "clare", name: "Clare W", teacher_id
 Student.create(username: "Lauren", password: "lauren", name: "Lauren D", teacher_id:  2, user_type: "student")
 
 
-Question.create(name: "Q1 k", content: "kathleen 1", teacher_id: 1, points: 5)
-Question.create(name: "Q2 k", content: "kathleen 2", teacher_id: 1, points: 5)
-Question.create(name: "Q1 b", content: "brian 1", teacher_id: 2, points: 5)
-Question.create(name: "Q2 b", content: "brian 2", teacher_id: 2, points: 5)
+Question.create(name: "Question 1", content: "What is 1 + 1?", teacher_id: 1, points: 5)
+Question.create(name: "Question 2", content: "What is 2 + 1?", teacher_id: 1, points: 5)
+Question.create(name: "Question 1", content: "brian 1", teacher_id: 2, points: 5)
+Question.create(name: "Question 2", content: "brian 2", teacher_id: 2, points: 5)
 
 StudentQuestion.create(student_id: 1, question_id: 1, grade: nil, feedback: nil, answer: nil)
 StudentQuestion.create(student_id: 1, question_id: 2, grade: nil, feedback: nil, answer: nil)
