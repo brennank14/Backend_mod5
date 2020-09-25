@@ -14,6 +14,8 @@ class QuestionsController < ApplicationController
 
     def create
         question = Question.create(question_params)
+        teacher = Teacher.find(params[:teacher_id])
+        teacher.students.map { |student| StudentQuestion.create(student_id: student.id, question_id: question.id, grade: nil, graded: false, feedback: '', answer: '')}
         render json: question
     end
   
@@ -36,4 +38,8 @@ class QuestionsController < ApplicationController
         def question_params
             params.require(:question).permit(:name, :content, :teacher_id, :points)
         end
+
+        # def student_question_params
+        #     params.require(:student_question).permit(:student_id, :question_id, :grade, :graded, :feedback, :answer)
+        # end
 end

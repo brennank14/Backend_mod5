@@ -10,12 +10,6 @@ class StudentQuestionsController < ApplicationController
         student_question = StudentQuestion.find(params[:id])
         render json: student_question
     end
-
-
-    def create
-        student_question = StudentQuestion.create(student_question_params)
-        render json: student_question
-    end
   
 
     def update
