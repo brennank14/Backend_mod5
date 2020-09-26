@@ -3,4 +3,5 @@ class Student < ApplicationRecord
     belongs_to :teacher
     has_many :questions, through: :student_questions
     has_secure_password
+    validates :username, uniqueness: { case_sensitive: false }
 end

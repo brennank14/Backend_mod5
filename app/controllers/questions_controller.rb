@@ -15,7 +15,8 @@ class QuestionsController < ApplicationController
     def create
         question = Question.create(question_params)
         teacher = Teacher.find(params[:teacher_id])
-        teacher.students.map { |student| StudentQuestion.create(student_id: student.id, question_id: question.id, grade: nil, graded: false, feedback: '', answer: '')}
+        studentsArr = teacher.students
+        studentsArr.map { |student| StudentQuestion.create(student_id: teacher.students.first.id, question_id: question.id, grade: nil, graded: false, feedback: '', answer: '')}
         render json: question
     end
   
