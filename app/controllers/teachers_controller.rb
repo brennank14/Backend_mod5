@@ -10,9 +10,6 @@ class TeachersController < ApplicationController
         render json: teacher
     end
 
-    # def profile
-    #     render json: { teacher: TeacherSerializer.new(teacher) }, status: :accepted
-    # end
 
     def create
       @teacher = Teacher.create(teacher_params)
