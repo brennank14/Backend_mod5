@@ -1,5 +1,4 @@
 class StudentQuestionsController < ApplicationController
-    
     def index
         student_questions = StudentQuestion.all 
         render json: student_questions
@@ -12,11 +11,6 @@ class StudentQuestionsController < ApplicationController
     end
   
 
-    def update
-        student_question = StudentQuestion.find(params[:id])
-        student_question.update_attributes(student_question_params)
-      render json: student_question
-    end
   
 
     def destroy

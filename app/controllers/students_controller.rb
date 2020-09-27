@@ -1,5 +1,4 @@
 class StudentsController < ApplicationController
-    skip_before_action :authorized, only: [:create]
     def index
         students = Student.all 
         render json: students 

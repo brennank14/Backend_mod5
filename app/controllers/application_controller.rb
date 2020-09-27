@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
     include ::ActionController::Serialization
-        before_action :authorized
+        #before_action :authorized
         def encode_token(payload)
           JWT.encode(payload, 'my_s3cr3t')
         end
@@ -27,9 +27,7 @@ class ApplicationController < ActionController::API
                     @student = Student.find_by(id: student_id)
                     render json: { student: StudentSerializer.new(@student) }, status: :accepted
                 elsif decoded_token[0].include?('teacher_id')
-
                     teacher_id = decoded_token[0]['teacher_id']
-                 
                     @teacher = Teacher.find_by(id: teacher_id)
                     render json: { teacher: TeacherSerializer.new(@teacher) }, status: :accepted
                 end
