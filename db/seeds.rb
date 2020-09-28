@@ -17,10 +17,14 @@ Student.create(username: "Clare", password: "clare", name: "Clare W", teacher_id
 Student.create(username: "Lauren", password: "lauren", name: "Lauren D", teacher_id:  2, user_type: "student")
 
 
-Question.create(name: "Question 1", content: "What is 1 + 1?", teacher_id: 1, points: 5)
-Question.create(name: "Question 2", content: "What is 2 + 1?", teacher_id: 1, points: 5)
-Question.create(name: "Question 1", content: "brian 1", teacher_id: 2, points: 5)
-Question.create(name: "Question 2", content: "brian 2", teacher_id: 2, points: 5)
+Question.create(name: "Centriod Construction", content: "Define 'median'. 1) Construct a trignale of choice using the sketchpad. \n2) Construct the three medians of the triangle.", teacher_id: 1, points: 5)
+Question.create(name: "Circumcenter Construction", content: "1) Construct the triangle of your choice using the sketchpad. \n2) Construct the perpensicular bicestor to each side of the triangle. \n3) Construct a circle, using the point of concurrency as the center. \nWhat do you notie about the relationship between the triangle and the circle? ", teacher_id: 1, points: 5)
+Question.create(name: "Incenter Construction", content: "1) Construct a triangle of your choice. \n2) From each vertex, construct an angle bisector. Make sure it intersects with the opposite side of the triangle. \n3) Construct a circle, using the point of concurrency as the center. \nWhat do you notice about the relationship between the triangle and the circle?", teacher_id: 2, points: 5)
+Question.create(name: "Orthocenter Construction", content: "Define 'orthocenter'. \n1) Construct a triangle of your choice in the sketchpad. \n2) from each vertex, construct a perpendicular line to the opposite side.", teacher_id: 2, points: 5)
+Question.create(name: "Centriod Construction", content: "Define 'median'. \n1) Construct a trignale of choice using the sketchpad. \n2) Construct the three medians of the triangle.", teacher_id: 2, points: 5)
+Question.create(name: "Circumcenter Construction", content: "1) Construct the triangle of your choice using the sketchpad. \n2) Construct the perpensicular bicestor to each side of the triangle. \n3) Construct a circle, using the point of concurrency as the center. \nWhat do you notie about the relationship between the triangle and the circle? ", teacher_id: 2, points: 5)
+Question.create(name: "Incenter Construction", content: "1) Construct a triangle of your choice. \n2) From each vertex, construct an angle bisector. Make sure it intersects with the opposite side of the triangle. \n3) Construct a circle, using the point of concurrency as the center. \nWhat do you notice about the relationship between the triangle and the circle?", teacher_id: 1, points: 5)
+Question.create(name: "Orthocenter Construction", content: "Define 'orthocenter'. \n1) Construct a triangle of your choice in the sketchpad. \n2) from each vertex, construct a perpendicular line to the opposite side.", teacher_id: 1, points: 5)
 
 StudentQuestion.create(student_id: 1, question_id: 1, grade: nil, feedback: nil, answer: nil, graded: false)
 StudentQuestion.create(student_id: 1, question_id: 2, grade: nil, feedback: nil, answer: nil, graded: false)
