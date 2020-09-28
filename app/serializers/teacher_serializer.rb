@@ -1,5 +1,5 @@
 class TeacherSerializer < ActiveModel::Serializer
-  attributes :id, :username, :password, :name
+  attributes :id, :username, :password, :name, :user_type
   has_many :students
   has_many :questions
 
